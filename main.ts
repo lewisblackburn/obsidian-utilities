@@ -34,6 +34,7 @@ export default class MyPlugin extends Plugin {
 		}));
 	}
 
+	// NOTE: This is not used but I will keep it here.
 	onunload() { }
 
 	async loadSettings() {
