@@ -27,7 +27,7 @@ export default class MyPlugin extends Plugin {
 					//TODO: Maybe check if the clipboard value is a link?
 					// If it isn't, leave the reference blank
 					const text = await navigator.clipboard.readText();
-					const value = editor.getValue().replace('.ref', `[(reference)](${text})`);
+					const value = editor.getValue().replace('.ref', `[(Reference)](${text})`);
 					editor.setValue(value);
 				}, 1);
 			}
